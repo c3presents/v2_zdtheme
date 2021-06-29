@@ -19,22 +19,24 @@
               {{/if}}
               {{#each sections}}
                 {{#if articles}}
-                  <section class="section">
-                    <h2 class="section-tree-title">
-                      <a href="{{url}}">{{name}}</a>
-                      {{#if description}}
-                        <p class="page-header-description">{{description}}</p>
-                      {{/if}}
-                    </h2>
+                  <li class="blocks-item">
+                    <section class="section">
+                      <h2 class="section-tree-title">
+                        <a href="{{url}}">{{name}}</a>
+                        {{#if description}}
+                          <p class="page-header-description">{{description}}</p>
+                        {{/if}}
+                      </h2>
 
-                    <ul class="article-list">
-                      {{#each articles}}
-                        <li class="article">
-                          <a href="{{url}}">{{title}}</a>
-                        </li>
-                      {{/each}}
-                    </ul>
-                  </section>
+                      <ul class="article-list">
+                        {{#each articles}}
+                          <li class="article">
+                            <a href="{{url}}">{{title}}</a>
+                          </li>
+                        {{/each}}
+                      </ul>
+                    </section>
+                  </li>
                 {{/if}}
               {{/each}}
             {{/if}}
