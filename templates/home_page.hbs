@@ -26,13 +26,10 @@
             </li>
           {{else}}
             {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
-                </a>
+              <section class="section">
+                <h2 class="section-tree-title">
+                  <a href="{{url}}">{{name}}</a>
+                </h2>
 
                 {{#if articles}}
                   <ul class="article-list">
@@ -48,7 +45,7 @@
                   </i>
                 {{/if}}
 
-              </li>
+              </section>
             {{/each}}
           {{/if}}
         {{/each}}
