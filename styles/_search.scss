@@ -3,7 +3,7 @@
   position: relative;
 
   input[type="search"] {
-    border: 1px solid $search-focus-border-color;
+    border: 1px solid #666;
     border-radius: 30px;
     box-sizing: border-box;
     color: $field-text-color;
@@ -25,7 +25,7 @@
   }
 
   &-full input[type="search"] {
-    border: 1px solid $search-border-color;
+    border: 1px solid #555;
   }
 }
 
