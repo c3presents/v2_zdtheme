@@ -291,12 +291,12 @@ textarea:focus {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1100px) {
   .container {
     padding: 0;
     width: 90%;
@@ -315,12 +315,12 @@ ul {
 }
 
 .error-page {
-  max-width: 1160px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 5%;
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 1100px) {
   .error-page {
     padding: 0;
     width: 90%;
