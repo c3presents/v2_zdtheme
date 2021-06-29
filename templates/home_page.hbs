@@ -26,12 +26,13 @@
             </li>
           {{else}}
             {{#each sections}}
-              <section class="section">
-                <h2 class="section-tree-title">
-                  <a href="{{url}}">{{name}}</a>
-                </h2>
+              {{#if articles}}
+                <section class="section">
+                  <h2 class="section-tree-title">
+                    <a href="{{url}}">{{name}}</a>
+                    <p class="page-header-description">{{description}}</p>
+                  </h2>
 
-                {{#if articles}}
                   <ul class="article-list">
                     {{#each articles}}
                       <li class="article">
@@ -39,13 +40,8 @@
                       </li>
                     {{/each}}
                   </ul>
-                {{else}}
-                  <i class="section-empty">
-                    <a href="{{url}}">{{t 'empty'}}</a>
-                  </i>
-                {{/if}}
-
-              </section>
+                </section>
+              {{/if}}
             {{/each}}
           {{/if}}
         {{/each}}
