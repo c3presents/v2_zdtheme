@@ -114,6 +114,16 @@ parts:
       screenshot: "https://zendesk.box.com/s/cffw5at7onzirw9g54kmecdji28zk02x"
       value: "Company logo"
   - translation:
+      key: "txt.help_center_copenhagen_theme.home_title_description"
+      title: "Description for the Home Page Title"
+      screenshot: "https://zendesk.box.com/s/cffw5at7onzirw9g54kmecdji28zk02x"
+      value: "Heading for the Home Page"
+  - translation:
+      key: "txt.help_center_copenhagen_theme.home_title_label"
+      title: "Label for the Home Title setting"
+      screenshot: "https://zendesk.box.com/s/cffw5at7onzirw9g54kmecdji28zk02x"
+      value: "Home Page Title"
+  - translation:
       key: "txt.help_center_copenhagen_theme.logo_label"
       title: "Label for the logo setting"
       screenshot: "https://zendesk.box.com/s/cffw5at7onzirw9g54kmecdji28zk02x"

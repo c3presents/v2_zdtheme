@@ -1,7 +1,7 @@
 {
   "name": "C3 Sections+",
   "author": "Eric",
-  "version": "4.0.40",
+  "version": "4.0.41",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -206,6 +206,12 @@
     {
       "label": "brand_group_label",
       "variables": [
+        {
+          "identifier": "home_title",
+          "type": "text",
+          "description": "home_title_description",
+          "label": "home_title_label"
+        },
         {
           "identifier": "logo",
           "type": "file",
