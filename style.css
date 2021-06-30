@@ -1125,7 +1125,7 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
+  border: 0px solid $brand_color;
   border-radius: 4px;
   box-sizing: border-box;
   color: $brand_color;
@@ -1528,7 +1528,7 @@ ul {
   .article {
     flex: 1 0 66%;
     max-width: 66%;
-    min-width: 640px;
+    min-width: 500px;
     padding: 0 30px;
   }
 }
