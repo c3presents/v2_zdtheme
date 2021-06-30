@@ -16,11 +16,11 @@
             {{else}}
               <h2>{{../settings.home_title}}</h2>
               {{#if description}}
-                <p class="page-header-description">{{description}}</p>
+                <p style="margin-top:3px; margin-bottom:3px;" class="page-header-description">{{description}}</p>
               {{/if}}
               {{#each sections}}
                 {{#if articles}}
-                  <li>
+                  <li style="width:45%">
                     <section class="section">
                       <h2 class="section-tree-title">
                         <a href="{{url}}">{{name}}</a>
@@ -32,7 +32,7 @@
 
                       <ul class="article-list indent-bullet-list" style="list-style: circle inside;">
                         {{#each articles}}
-                          <li class="article">
+                          <li class="article" style="margin-bottom:5px;">
                             <a href="{{url}}">{{title}}</a>
                           </li>
                         {{/each}}
