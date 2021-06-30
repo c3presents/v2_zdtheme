@@ -207,16 +207,17 @@
       "label": "brand_group_label",
       "variables": [
         {
-          "identifier": "home_title",
-          "type": "text",
-          "label": "home_title_label",
-          "value": "Festival Support Center"
-        },
-        {
           "identifier": "logo",
           "type": "file",
           "description": "logo_description",
           "label": "logo_label"
+        },
+        {
+          "identifier": "home_title",
+          "type": "text",
+          "label": "home_title_label",
+          "description": "home_title_description",
+          "value": "Festival Support Center"
         },
         {
           "identifier": "show_brand_name",
