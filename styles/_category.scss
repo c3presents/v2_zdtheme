@@ -44,11 +44,12 @@
   &-item {
     font-size: $font-size-bigger;
     padding: 15px 0;
-    text-indent: -20px; /* key property */
-    margin-left: 20px; /* key property */
     
     a { color: $text_color; }
   }
+  text-indent: -20px; /* key property */
+  margin-left: 20px; /* key property */
+
 }
 
 .icon-star {
