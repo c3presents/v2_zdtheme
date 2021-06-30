@@ -8,7 +8,7 @@
   margin-bottom: 0px;
 }
 
-ul.article-list.indent-bullet-list { /* indent wrapped lines */
+li.article { /* indent wrapped lines */
   text-indent: -20px !important; /* key property */
   margin-left: 20px !important; /* key property */
 }
