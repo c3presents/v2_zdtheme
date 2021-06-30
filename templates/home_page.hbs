@@ -23,10 +23,11 @@
                     <section class="section">
                       <h2 class="section-tree-title">
                         <a href="{{url}}">{{name}}</a>
-                        {{#if description}}
-                          <p class="profile-section-description">{{description}}</p>
-                        {{/if}}
                       </h2>
+                      {{#if description}}
+                        <p class="profile-section-description">{{description}}</p>
+                      {{/if}}
+                      
 
                       <ul class="article-list indent-bullet-list" style="list-style: circle inside;">
                         {{#each articles}}
