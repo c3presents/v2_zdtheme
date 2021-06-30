@@ -1,7 +1,7 @@
 {
   "name": "C3 Sections+",
   "author": "Eric",
-  "version": "4.0.41",
+  "version": "4.0.42",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -209,8 +209,8 @@
         {
           "identifier": "home_title",
           "type": "text",
-          "description": "home_title_description",
-          "label": "home_title_label"
+          "label": "home_title_label",
+          "value": "Festival Support Center"
         },
         {
           "identifier": "logo",
