@@ -1531,6 +1531,8 @@ ul {
     max-width: 66%;
     min-width: 500px;
     padding: 0 30px;
+    text-indent: -20px !important; /* key property */
+    margin-left: 20px !important; /* key property */  
   }
 }
 
