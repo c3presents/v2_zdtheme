@@ -49,9 +49,9 @@
   }
 }
 
-ul .article-list { /* indent wrapped lines */
-  text-indent: -20px; /* key property */
-  margin-left: 20px; /* key property */
+section .section ul .article-list { /* indent wrapped lines */
+  text-indent: -20px !important; /* key property */
+  margin-left: 20px !important; /* key property */
 }
 
 .icon-star {
