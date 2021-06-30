@@ -1133,7 +1133,7 @@ ul {
   flex: 1 0 340px;
   margin: 0 0 30px;
   max-width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -1202,7 +1202,8 @@ ul {
 
 /***** Homepage *****/
 .section {
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
