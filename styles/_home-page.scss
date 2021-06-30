@@ -8,7 +8,7 @@
   margin-bottom: 0px;
 }
 
-.indent-bullet-list { /* indent wrapped lines */
+ul.article-list.indent-bullet-list { /* indent wrapped lines */
   text-indent: -20px !important; /* key property */
   margin-left: 20px !important; /* key property */
 }
