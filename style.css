@@ -1538,6 +1538,11 @@ ul {
   }
 }
 
+li.article.superfaq {
+  list-style: square inside;
+}
+
+
 .article-container {
   display: flex;
   flex-direction: column;
