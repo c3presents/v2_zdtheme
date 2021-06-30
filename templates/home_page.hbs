@@ -32,13 +32,7 @@
 
                       <ul class="article-list indent-bullet-list" style="list-style: circle inside;">
                         {{#each articles}}
-                          <li style="margin-bottom:5px;" class="article
-                            {{#each labels}}
-                              {{#is identifier 'superfaq'}}
-                                superfaq
-                              {{/is}}
-                            {{/each}}
-                          ">
+                          <li style="margin-bottom:5px;" class="article{{#each labels}}{{#is identifier 'superfaq'}} superfaq{{/is}}{{/each}}">
                             <a href="{{url}}">{{title}}</a>
                           </li>
                         {{/each}}
