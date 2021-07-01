@@ -1027,9 +1027,17 @@ ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 610px;
+  max-width: 50%;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .hero-inner {
+    max-width: 90%;
+  }
+}
+
+
 
 .page-header {
   display: flex;
