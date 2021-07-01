@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url($background_image_pattern);
+  /*background-image: url($background_image_pattern);*/
 }
 
 main {
