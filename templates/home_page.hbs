@@ -16,6 +16,10 @@
     <section class="section knowledge-base">
       <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
       <section class="categories blocks">
+        <h2>{{../settings.home_title}}</h2>
+        {{#if description}}
+          <p class="page-header-description">{{description}}</p>
+        {{/if}}
         <ul class="blocks-list">
           {{#each categories}}
             {{#if ../has_multiple_categories}}
@@ -26,10 +30,6 @@
                 </a>
               </li>
             {{else}}
-              <h2>{{../settings.home_title}}</h2>
-              {{#if description}}
-                <p class="page-header-description">{{description}}</p>
-              {{/if}}
               {{#each sections}}
                 {{#if articles}}
                   <li class="mysections">
