@@ -27,6 +27,10 @@
                 </svg>
               </a>
             </li>
+            {{#if description}}
+              <p style="margin-bottom:15px; margin-block-start:0em; padding-top:0px;" class="profile-section-description">{{description}}</p>
+            {{/if}}
+
           {{/each}}
         </ul>
       {{/if}}
@@ -35,7 +39,7 @@
 
       {{#if section.articles}}
         <ul class="article-list">
-          {{#each section.articles}}
+          {{#each section.articles}} 
             <li class="article-list-item {{#if promoted}} article-promoted{{/if}}">
               {{#if promoted}}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 12 12" class="icon-star" title="{{t 'promoted'}}">
