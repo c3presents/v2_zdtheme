@@ -1524,8 +1524,8 @@ ul {
   */
   flex: 1 0 auto;
   max-width: 66%;
-  padding: 0 30px;
-  text-indent: -20px !important; /* key property */
+  padding: 0 30px 0 10px;
+  text-indent: 0px !important; /* key property */
   margin-left: 20px !important; /* key property */  
 }
 
@@ -1534,8 +1534,8 @@ ul {
     flex: 1 0 66%;
     max-width: 66%;
     min-width: 500px;
-    padding: 0 30px;
-    text-indent: -20px !important; /* key property */
+    padding: 0 30px 0 10px;
+    text-indent: 0px !important; /* key property */
     margin-left: 20px !important; /* key property */  
   }
 }
