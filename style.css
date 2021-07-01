@@ -1562,7 +1562,7 @@ li.mysections {
 }
 @media (max-width: 768px) {
   li.mysections {
-    width: 45%;
+    width: 90%;
   }
 }
 
