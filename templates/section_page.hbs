@@ -40,7 +40,7 @@
       {{#if section.articles}}
         <ul class="article-list indent-bullet-list" style="list-style: circle inside;">
           {{#each section.articles}}
-            <li style="margin-bottom:5px;" class="article{{#each labels}}{{#is identifier 'superfaq'}} superfaq{{/is}}{{/each}}"></li>
+            <li style="margin-bottom:5px;" class="article{{#each labels}}{{#is identifier 'superfaq'}} superfaq{{/is}}{{/each}}">
             <!-- li class="article-list-item {{#if promoted}} article-promoted{{/if}}"-->
               {{#if promoted}}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 12 12" class="icon-star" title="{{t 'promoted'}}">
