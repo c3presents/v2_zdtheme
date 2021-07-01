@@ -1557,6 +1557,15 @@ li.article.superfaq {
   /*list-style: "🔥";*/
 }
 
+li.mysections {
+  width: 45%;
+}
+@media (max-width: 768px) {
+  li.mysections {
+    width: 45%;
+  }
+}
+
 .article-container {
   display: flex;
   flex-direction: column;
