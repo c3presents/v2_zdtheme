@@ -1538,11 +1538,13 @@ ul {
   }
 }
 
-li.article.superfaq {
-  list-style: "🔥";
+li.article {
+  list-style: "✔️";
   list-style-position: inside;
 }
-
+li.article.superfaq {
+  list-style: "🔥";
+}
 
 .article-container {
   display: flex;
