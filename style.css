@@ -1026,12 +1026,11 @@ ul {
 .hero-inner {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero-inner {
     max-width: 90%;
   }
