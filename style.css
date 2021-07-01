@@ -1523,6 +1523,8 @@ ul {
   * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
+  max-width: 66%;
+  padding: 0 30px;
   text-indent: -20px !important; /* key property */
   margin-left: 20px !important; /* key property */  
 }
