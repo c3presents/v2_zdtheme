@@ -238,10 +238,10 @@
       "label": "images_group_label",
       "variables": [
         {
-          "identifier": "homepage_background_image",
+          "identifier": "background_image_pattern",
           "type": "file",
-          "description": "homepage_background_image_description",
-          "label": "homepage_background_image_label"
+          "description": "background_image_pattern_description",
+          "label": "background_image_pattern_label"
         },
         {
           "identifier": "community_background_image",
