@@ -1539,12 +1539,14 @@ ul {
 }
 
 li.article {
-  list-style: "⚬";
   list-style-position: inside;
+  list-style: "⚪";
 }
 li.article.superfaq {
   list-style-position: inside;
-  list-style: "🔥";
+  list-style: "🟢";
+  font-weight: bold;
+  /*list-style: "🔥";*/
 }
 
 .article-container {
