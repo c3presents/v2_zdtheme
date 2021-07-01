@@ -1128,7 +1128,7 @@ ul {
 
 @media (min-width: 768px) {
   .blocks-list {
-    margin: 0 -15px;
+    margin: 0 0px;
   }
 }
 
