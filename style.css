@@ -1539,7 +1539,8 @@ ul {
 }
 
 li.article.superfaq {
-  list-style: square inside;
+  list-style: "🔁  ";
+  list-style-position: inside;
 }
 
 
