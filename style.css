@@ -1560,7 +1560,7 @@ li.article.superfaq {
 }
 
 li.mysections {
-  width: 45%;
+  width: 50%;
 }
 @media (max-width: 768px) {
   li.mysections {
