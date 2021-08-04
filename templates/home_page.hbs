@@ -19,13 +19,15 @@
         {{#each categories}}
           <ul class="blocks-list">
             {{#if ../has_multiple_categories}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">{{name}}</span>
+              <li class="mysections">
+                <section class="section">
+                  <h2 style="margin-bottom:5px;" class="section-tree-title">
+                    <a href="{{url}}">{{name}}</a>
+                  </h2>
                   {{#if description}}
-                    <span class="blocks-item-description">{{description}}</span>
+                    <p style="margin-bottom:15px; margin-block-start:0em; padding-top:0px;" class="profile-section-description">{{description}}</p>
                   {{/if}}
-                </a>
+                </section>
               </li>
             {{else}}
               <h2>{{../settings.home_title}}</h2>
