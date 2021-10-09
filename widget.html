@@ -1,0 +1,84 @@
+<!-- Start of Zendesk Widget script including contextual help -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=143d2033-586c-466c-b905-931d52fe0923"> </script>
+<script type="text/javascript">
+  
+  var pagePath = {{Page Path}};
+  // ZD supports a search string or labels but not both, so we use labels
+  //   By default, we add "superfaq" label to every widget instance to match
+  //   the truly frequently asked questions at the moment
+  var labels = ['superfaq']; // matches articles with label superfaq
+  // assign an array of potential labels for each page on the site
+  if (pagePath.match(/.*ticket.*/)) {
+    labels.push('ticket');
+  } else if (pagePath.match(/.*lineup.*/)) {
+    labels.push('lineup');
+  } else if (pagePath.match(/.*privacy.*/)) {
+    labels.push('privacy');
+  } else if (pagePath == '/') {
+    labels.push('home');
+  }
+
+  if (zE) { // be sure the script above loaded
+    var widgets = { 
+      webWidget:{ 
+        launcher:{}, 
+        helpCenter:{}, 
+        chat:{},
+        talk:{},
+        answerBot:{}, 
+        contactForm:{}, 
+        contactOptions:{},
+        position: { 
+          horizontal: 'right', 
+          vertical: 'bottom' 
+        },
+        offset: {
+          horizontal: '5px',
+          vertical: '10px',
+          mobile: {
+            horizontal: '5px',
+            vertical: '10px'
+          }
+        }
+      } 
+    };
+    widgets.analytics = true; // use Google Analytics with the Web Widget
+    var ww = widgets.webWidget;
+    ww.launcher.label = { '*': 'Questions?' }; // Web Widget button CTA
+    ww.launcher.chatLabel = { '*': 'Chat' }; // Web Widget button CTA when HC is not active
+
+    ww.helpCenter.suppress = false; // allow searches
+    ww.helpCenter.title = { '*': 'Festival Info Booth' }; // Web Widget Header
+    ww.helpCenter.originalArticleButton = false; // Don't link to original article
+    ww.helpCenter.searchPlaceholder = { '*': 'Ask me anything!' };
+    ww.helpCenter.messageButton = {'*': '...or contact a human' };
+    ww.helpCenter.chatButton = {'*': 'Live Chat' };
+    // ww.helpCenter.filter = { section: '' }; // use comma separated list of section ids
+    // ww.helpCenter.filter = { category: '' }; // use comma separated list of category ids
+    // ww.helpCenter.filter = { label_names: '' }; // use comma separated list of label names
+
+    ww.chat.suppress = false; // turn off/on live chat
+    ww.talk.suppress = false; // turn off/on phone calls
+    ww.answerBot.suppress = true; // turn off/on AnswerBot
+
+    ww.contactForm.suppress = false; // allow new ticket submissions
+    ww.contactForm.title = { '*': 'Contact Us' };
+    ww.contactForm.selectTicketForm = { '*': 'Please choose one:' };
+    ww.contactForm.ticketForms = [{ id: 360003090452 }, {id: 360003119631 }];
+
+    ww.contactOptions.enabled = true;
+    ww.contactOptions.contactButton = { '*': 'Contact Options' };
+    // ww.contactOptions.contactFormLabel = { '*': 'Leave us a message' };
+    window.zESettings = widgets;
+
+    zE(function() {
+      // seed the contextual search
+      zE.setHelpCenterSuggestions({ labels: labels });
+    });
+
+  } else {
+    console.log("Zendesk Error: Web Widget is not loaded on this page");
+  }
+
+</script>
+<!-- End of Zendesk Widget script -->
